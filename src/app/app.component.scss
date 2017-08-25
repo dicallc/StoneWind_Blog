@@ -1,6 +1,18 @@
 .container{
   margin: 0;
   width: 100%;
+ padding: 0;
+}
+.blog_container{
   padding-left: 6%;
   padding-right: 6%;
+  padding-top: 20px;
+  background-color: #F6F6F6;
+}
+
+app-articletag{
+  width: 100%;
+}
+app-carditem{
+  width: 100%;
 }

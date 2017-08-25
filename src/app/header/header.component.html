@@ -1,10 +1,22 @@
 <div class=" topbar">
   <div class="row">
     <div class="col-sm-6">
-      <a *ngFor="let item of toobar_left_list; let i=index; let odd=odd;" >{{item}}</a>
+      <a *ngFor="let item of toobar_left_list; let i=index; let odd=odd;">{{item}}</a>
     </div>
     <div class="col-sm-6 row-end">
-      <a *ngFor="let item of toobar_right_list; let i=index; let odd=odd;" >{{item}}</a>
+      <a *ngFor="let item of toobar_right_list; let i=index; let odd=odd;">{{item}}</a>
     </div>
   </div>
+  <div class="row navigation">
+    <div class="col-sm-4 logo row-horizontal-center">
+      <img src="assets/img/logo.png">
+      <label class="brand">欢迎光临 <br>我们一直在努力</label>
+    </div>
+    <div class="col-sm-8 row-end row-horizontal-center navigation_ly" >
+      <label *ngFor="let item of navigation_list; let i=index; let odd=odd;" (click)="navigationClick(i)" [style.color]="item.select ? '#45B6F7' : '#666'">
+        <i class="icon iconfont " [ngClass]="item.icon" [style.color]="item.select ? '#45B6F7' : '#666'"></i>{{item.name}}</label>
+      <i class="icon iconfont icon-sousuo search " ></i>
+    </div>
+  </div>
+
 </div>
