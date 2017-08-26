@@ -1,0 +1,51 @@
+.recommendlist{
+  margin-bottom: 20px;
+  h3{
+    font-size: 18px;
+    color: #616161;
+    border-bottom: 1px solid #eaeaea;
+    background-color: #fbfbfb;
+    margin: 0;
+    padding: 11px 15px 10px;
+  }
+  .my_card{
+    margin: 0;
+    display: flex;
+    .logo{
+      background-color: #1d1e1f;
+      width: 122px;
+      height: 86px;
+
+    }
+    .card_content{
+      header{
+        h2{
+          margin-left: 5px;
+          display: inline;
+          font-size: 18px;
+          line-height: 24px;
+          margin-top: 0;
+          font-weight: bold;
+        }
+      }
+      .sub_title{
+        margin-top: 10px;
+        display: flex;
+        i{
+          display: block;
+          margin-right: 10px;
+        }
+        div{
+          color: #999;
+          margin-right: 20px;
+        }
+
+      }
+    }
+    p{
+      margin-top: 10px;
+      color: #999;
+    }
+  }
+
+}

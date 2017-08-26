@@ -1,4 +1,6 @@
-ng generate component header
+ng generate component recommendlist
+
+ng generate service 
 
 
 使用ng-bootstrap

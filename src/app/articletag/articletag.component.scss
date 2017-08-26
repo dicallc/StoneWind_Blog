@@ -1,0 +1,26 @@
+.articletag {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  label {
+    font-size: 20px;
+    margin: 0;
+    float: left;
+    color: #555;
+  }
+
+  .more {
+    float: right;
+    position: relative;
+    top: 5px;
+    a {
+      display: inline-block;
+      margin-left: 20px;
+      color: #999;
+    }
+    a:hover {
+      color: #45B6F7;
+      text-decoration: none;
+    }
+  }
+}

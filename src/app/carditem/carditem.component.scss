@@ -1,0 +1,41 @@
+.my_card{
+  display: flex;
+  margin-bottom: 10px;
+  .logo{
+    background-color: #1d1e1f;
+    height: 150px;
+  }
+  .card_content{
+
+    //background-color: red;
+    height: 150px;
+    header{
+      h2{
+        margin-left: 5px;
+        display: inline;
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 0;
+        font-weight: bold;
+      }
+    }
+    .sub_title{
+      margin-top: 10px;
+
+      display: flex;
+     i{
+       display: block;
+       margin-right: 10px;
+     }
+      div{
+        color: #999;
+        margin-right: 20px;
+      }
+
+    }
+  }
+  p{
+    margin-top: 10px;
+    color: #999;
+  }
+}

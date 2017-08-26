@@ -9,6 +9,10 @@
   display: flex;
   justify-content: flex-end;
 }
+.row-between{
+  display: flex;
+  justify-content:space-between;
+}
 .row-horizontal-center{
   display: flex;
   align-items: center;
@@ -17,4 +21,22 @@ ul {
   list-style: none;
   display: flex;
   flex-wrap: nowrap;
+}
+.SF_a{
+  //font-weight: ;
+  color: #666;
+  font-size: 12px;
+}
+.SF_a:hover {
+  color: #45B6F7;
+  text-decoration: none;
+}
+.SF_toobar{
+    font-size: 18px;
+    color: #616161;
+    border-bottom: 1px solid #eaeaea;
+    background-color: #fbfbfb;
+    margin: 0;
+  margin-top: 20px;
+    padding: 11px 15px 10px;
 }
