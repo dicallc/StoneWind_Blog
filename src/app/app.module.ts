@@ -17,6 +17,15 @@ import { RecommendlistComponent } from './recommendlist/recommendlist.component'
 import { RightsideComponent } from './rightside/rightside.component';
 import { HottagComponent } from './hottag/hottag.component';
 import { WebstatisticsComponent } from './webstatistics/webstatistics.component';
+import { MainComponent } from './main/main.component';
+import {RouterModule, Routes} from '@angular/router';
+import { BlogdetailComponent } from './blogdetail/blogdetail.component';
+import { FormsModule } from '@angular/forms';
+import { MarkdownToHtmlModule } from 'ng2-markdown-to-html';
+const routeConfig: Routes = [
+  {path: '', component: MainComponent},
+  {path: 'detail', component: BlogdetailComponent}
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,15 +38,20 @@ import { WebstatisticsComponent } from './webstatistics/webstatistics.component'
     RecommendlistComponent,
     RightsideComponent,
     HottagComponent,
-    WebstatisticsComponent
+    WebstatisticsComponent,
+    MainComponent,
+    BlogdetailComponent
   ],
   imports: [
+    FormsModule,
     BrowserAnimationsModule,
     MdCardModule,
     MdTabsModule,
     BrowserModule,
     MdListModule,
-    NgbModule.forRoot()
+    RouterModule.forRoot(routeConfig),
+    NgbModule.forRoot(),
+    MarkdownToHtmlModule.forRoot()
 
   ],
   providers: [],

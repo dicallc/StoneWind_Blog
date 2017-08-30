@@ -3,7 +3,8 @@
 @import "assets/bootstrap/bootstrap.min.css";
 @import "assets/css/demo.css";
 @import "assets/css/iconfont.css";
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+//@import "assets/css/prettify-angulario.css";
+//@import 'assets/css/prism.css';
 
 .row-end{
   display: flex;
@@ -30,6 +31,7 @@ ul {
 .SF_a:hover {
   color: #45B6F7;
   text-decoration: none;
+  cursor: pointer;
 }
 .SF_toobar{
     font-size: 18px;
@@ -40,3 +42,57 @@ ul {
   margin-top: 20px;
     padding: 11px 15px 10px;
 }
+app-blogdetail{
+  width: 100%;
+}
+md-card{
+  background-color: white;
+}
+.sf_markdown{
+  font-family: 'Microsoft Yahei';
+  color: #555;
+  font-size: 15px;
+  line-height: 25px;
+  white-space: pre-wrap;
+  blockquote{
+    margin: 30px 30px;
+    padding: 15px 20px 1px;
+    font-size: 16px;
+    color: #999;
+    border-left: 5px solid #EEE;
+  }
+  img{
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  h2{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 18px 0;
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px 0px;
+  }
+  p{
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  pre{
+    background-color: #272822;
+    word-wrap: break-word;
+    color: #F8F8D4;
+    border: none;
+    overflow: hidden;
+    padding: 10px 15px;
+    margin: 20px 0;
+    font: 12px/20px 'courier new';
+  }
+}
+//$SF_h1_fontsize: 26px;
